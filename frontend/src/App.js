@@ -13,8 +13,13 @@ function App() {
     }
   };
 
+  // ========================================
+  // 📱 WHATSAPP CONFIGURATION
+  // Update the phone number below (format: country code + number without + or spaces)
+  // Example: For +91 9849010190, use '919849010190'
+  // ========================================
   const handleWhatsApp = () => {
-    const phoneNumber = '919876543210'; // Replace with actual WhatsApp number
+    const phoneNumber = '919849010190'; // 🔄 CHANGE THIS: Your WhatsApp Business Number
     const message = encodeURIComponent('Hi SS Events! I would like to inquire about your event services.');
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
