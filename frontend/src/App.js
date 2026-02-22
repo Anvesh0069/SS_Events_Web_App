@@ -380,25 +380,27 @@ function App() {
                   </div>
                 </div>
 
+                {/* 🔄 CHANGE PHONE NUMBERS HERE */}
                 <div className="flex items-start space-x-4" data-testid="contact-phone">
                   <div className="bg-white/10 p-3 rounded-lg">
                     <Phone className="h-6 w-6 text-amber-300" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg mb-1">Phone</h4>
-                    <p className="text-gray-200">+91 98765 43210</p>
-                    <p className="text-gray-200">+91 98765 43211</p>
+                    <p className="text-gray-200">+91 9849010190</p>
+                    <p className="text-gray-200">+91 9849010190</p>
                   </div>
                 </div>
 
+                {/* 🔄 CHANGE EMAIL ADDRESSES HERE */}
                 <div className="flex items-start space-x-4" data-testid="contact-email">
                   <div className="bg-white/10 p-3 rounded-lg">
                     <Mail className="h-6 w-6 text-amber-300" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg mb-1">Email</h4>
-                    <p className="text-gray-200">info@ssevents.com</p>
-                    <p className="text-gray-200">bookings@ssevents.com</p>
+                    <p className="text-gray-200">anveshreddy00741@gmail.com</p>
+                    <p className="text-gray-200">anveshreddy00741@gmail.com</p>
                   </div>
                 </div>
               </div>
