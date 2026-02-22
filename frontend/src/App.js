@@ -373,7 +373,7 @@ function App() {
               <div className="mb-8 p-6 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20">
                 <h4 className="font-semibold text-lg text-amber-300 mb-2">Proprietor</h4>
                 <p className="text-2xl font-bold text-white">Ram Lal</p>
-                <p className="text-gray-200 italic">a.k.a Kalu Bhaya</p>
+                <p className="text-gray-200 text-lg">(Kalu Bhaya)</p>
                 <p className="text-gray-300 text-sm mt-2">20 Years of Event Excellence</p>
               </div>
               
