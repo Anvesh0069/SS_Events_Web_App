@@ -369,6 +369,14 @@ function App() {
             <div data-testid="contact-info">
               <h3 className="text-3xl font-bold mb-8">Get In Touch</h3>
               
+              {/* 🔄 CHANGE PROPRIETOR NAME HERE */}
+              <div className="mb-8 p-6 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20">
+                <h4 className="font-semibold text-lg text-amber-300 mb-2">Proprietor</h4>
+                <p className="text-2xl font-bold text-white">Ram Lal</p>
+                <p className="text-gray-200 italic">a.k.a Kalu Bhaya</p>
+                <p className="text-gray-300 text-sm mt-2">20 Years of Event Excellence</p>
+              </div>
+              
               <div className="space-y-6">
                 <div className="flex items-start space-x-4" data-testid="contact-location">
                   <div className="bg-white/10 p-3 rounded-lg">
