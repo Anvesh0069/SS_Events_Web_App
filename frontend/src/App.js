@@ -274,53 +274,112 @@ function App() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Video 1 - Luxurious Wedding Aisle */}
-            <div className="relative overflow-hidden rounded-xl shadow-lg group bg-black" data-testid="gallery-video-1">
+            <div className="relative overflow-hidden rounded-xl shadow-2xl group bg-black" data-testid="gallery-video-1">
               <video 
-                className="w-full h-80 object-cover"
+                className="w-full h-80 object-cover cursor-pointer"
                 controls
-                preload="metadata"
-                poster="https://images.pexels.com/photos/19376436/pexels-photo-19376436.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                preload="auto"
+                playsInline
+                webkit-playsinline="true"
+                controlsList="nodownload"
               >
                 <source src="https://customer-assets.emergentagent.com/job_capability-finder-28/artifacts/ofuauy8i_WhatsApp%20Video%202026-02-24%20at%207.21.24%20PM.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
-                <p className="text-white font-semibold">Luxurious Wedding Aisle</p>
-                <p className="text-gray-300 text-sm">Purple lighting & floral elegance</p>
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-purple-900/90 to-transparent p-4 pointer-events-none">
+                <p className="text-white font-bold text-lg">Luxurious Wedding Aisle</p>
+                <p className="text-gray-200 text-sm">Purple lighting, chandeliers & floral elegance</p>
+              </div>
+              <div className="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded pointer-events-none">
+                OUR WORK
               </div>
             </div>
 
             {/* Video 2 - Modern Stage Setup */}
-            <div className="relative overflow-hidden rounded-xl shadow-lg group bg-black" data-testid="gallery-video-2">
+            <div className="relative overflow-hidden rounded-xl shadow-2xl group bg-black" data-testid="gallery-video-2">
               <video 
-                className="w-full h-80 object-cover"
+                className="w-full h-80 object-cover cursor-pointer"
                 controls
-                preload="metadata"
-                poster="https://images.pexels.com/photos/32482872/pexels-photo-32482872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                preload="auto"
+                playsInline
+                webkit-playsinline="true"
+                controlsList="nodownload"
               >
                 <source src="https://customer-assets.emergentagent.com/job_capability-finder-28/artifacts/8efb5ec8_WhatsApp%20Video%202026-02-24%20at%207.21.25%20PM%20%281%29.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
-                <p className="text-white font-semibold">Geometric LED Stage</p>
-                <p className="text-gray-300 text-sm">Modern meets classic opulence</p>
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-purple-900/90 to-transparent p-4 pointer-events-none">
+                <p className="text-white font-bold text-lg">Geometric LED Stage</p>
+                <p className="text-gray-200 text-sm">Modern meets classic opulence</p>
+              </div>
+              <div className="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded pointer-events-none">
+                OUR WORK
               </div>
             </div>
 
             {/* Video 3 - Triangular Light Projection */}
-            <div className="relative overflow-hidden rounded-xl shadow-lg group bg-black" data-testid="gallery-video-3">
+            <div className="relative overflow-hidden rounded-xl shadow-2xl group bg-black" data-testid="gallery-video-3">
               <video 
-                className="w-full h-80 object-cover"
+                className="w-full h-80 object-cover cursor-pointer"
                 controls
-                preload="metadata"
-                poster="https://images.unsplash.com/photo-1762968269894-1d7e1ce8894e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjBldmVudCUyMHN0YWdlfGVufDB8fHx8MTc3MTc3NzgzOHww&ixlib=rb-4.1.0&q=85"
+                preload="auto"
+                playsInline
+                webkit-playsinline="true"
+                controlsList="nodownload"
               >
                 <source src="https://customer-assets.emergentagent.com/job_capability-finder-28/artifacts/h3wxegek_WhatsApp%20Video%202026-02-24%20at%207.23.01%20PM%20%281%29.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
-                <p className="text-white font-semibold">3D Light Projection</p>
-                <p className="text-gray-300 text-sm">Innovative triangular hologram effect</p>
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-purple-900/90 to-transparent p-4 pointer-events-none">
+                <p className="text-white font-bold text-lg">3D Light Projection</p>
+                <p className="text-gray-200 text-sm">Innovative triangular hologram effect</p>
+              </div>
+              <div className="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded pointer-events-none">
+                OUR WORK
+              </div>
+            </div>
+
+            {/* Video 4 - Religious Ceremony LED Setup */}
+            <div className="relative overflow-hidden rounded-xl shadow-2xl group bg-black" data-testid="gallery-video-4">
+              <video 
+                className="w-full h-80 object-cover cursor-pointer"
+                controls
+                preload="auto"
+                playsInline
+                webkit-playsinline="true"
+                controlsList="nodownload"
+              >
+                <source src="https://customer-assets.emergentagent.com/job_capability-finder-28/artifacts/v56rddm5_WhatsApp%20Video%202026-02-24%20at%207.30.56%20PM.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-purple-900/90 to-transparent p-4 pointer-events-none">
+                <p className="text-white font-bold text-lg">Grand LED Display Setup</p>
+                <p className="text-gray-200 text-sm">Religious ceremony with digital screens</p>
+              </div>
+              <div className="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded pointer-events-none">
+                OUR WORK
+              </div>
+            </div>
+
+            {/* Video 5 - Event with Stage Performance */}
+            <div className="relative overflow-hidden rounded-xl shadow-2xl group bg-black" data-testid="gallery-video-5">
+              <video 
+                className="w-full h-80 object-cover cursor-pointer"
+                controls
+                preload="auto"
+                playsInline
+                webkit-playsinline="true"
+                controlsList="nodownload"
+              >
+                <source src="https://customer-assets.emergentagent.com/job_capability-finder-28/artifacts/ofqmpt5h_WhatsApp%20Video%202026-02-24%20at%207.30.19%20PM.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-purple-900/90 to-transparent p-4 pointer-events-none">
+                <p className="text-white font-bold text-lg">Dynamic Stage Lighting</p>
+                <p className="text-gray-200 text-sm">Neon effects & professional sound</p>
+              </div>
+              <div className="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded pointer-events-none">
+                OUR WORK
               </div>
             </div>
 
@@ -333,40 +392,6 @@ function App() {
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity">
                 <p className="text-white font-semibold">Wedding Celebrations</p>
-              </div>
-            </div>
-
-            {/* Video 4 - Religious Ceremony LED Setup */}
-            <div className="relative overflow-hidden rounded-xl shadow-lg group bg-black" data-testid="gallery-video-4">
-              <video 
-                className="w-full h-80 object-cover"
-                controls
-                preload="metadata"
-                poster="https://images.pexels.com/photos/35755228/pexels-photo-35755228.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              >
-                <source src="https://customer-assets.emergentagent.com/job_capability-finder-28/artifacts/v56rddm5_WhatsApp%20Video%202026-02-24%20at%207.30.56%20PM.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
-                <p className="text-white font-semibold">Grand LED Display Setup</p>
-                <p className="text-gray-300 text-sm">Religious ceremony with digital screens</p>
-              </div>
-            </div>
-
-            {/* Video 5 - Event with Stage Performance */}
-            <div className="relative overflow-hidden rounded-xl shadow-lg group bg-black" data-testid="gallery-video-5">
-              <video 
-                className="w-full h-80 object-cover"
-                controls
-                preload="metadata"
-                poster="https://images.pexels.com/photos/32482872/pexels-photo-32482872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              >
-                <source src="https://customer-assets.emergentagent.com/job_capability-finder-28/artifacts/ofqmpt5h_WhatsApp%20Video%202026-02-24%20at%207.30.19%20PM.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
-                <p className="text-white font-semibold">Dynamic Stage Lighting</p>
-                <p className="text-gray-300 text-sm">Neon effects & professional sound</p>
               </div>
             </div>
 
