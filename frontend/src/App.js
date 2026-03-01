@@ -336,19 +336,14 @@ function App() {
               </div>
             </div>
 
-            {/* Video 4 - Religious Ceremony LED Setup */}
-            <div className="relative overflow-hidden rounded-2xl shadow-xl group bg-gradient-to-br from-orange-900 to-red-700 transform hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2" data-testid="gallery-video-4" style={{perspective: '1000px'}}>
+            {/* Image 4 - LED Display Setup */}
+            <div className="relative overflow-hidden rounded-2xl shadow-xl group bg-gradient-to-br from-orange-900 to-red-700 transform hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2" data-testid="gallery-image-4" style={{perspective: '1000px'}}>
               <div className="relative overflow-hidden" style={{transformStyle: 'preserve-3d'}}>
-                <video 
-                  className="w-full h-80 object-cover cursor-pointer group-hover:brightness-110 transition-all duration-500"
-                  controls
-                  preload="auto"
-                  playsInline
-                  webkit-playsinline="true"
-                >
-                  <source src="https://customer-assets.emergentagent.com/job_capability-finder-28/artifacts/v56rddm5_WhatsApp%20Video%202026-02-24%20at%207.30.56%20PM.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                <img 
+                  src="https://images.pexels.com/photos/35755228/pexels-photo-35755228.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                  alt="Grand LED Display Setup"
+                  className="w-full h-80 object-cover cursor-pointer group-hover:scale-110 group-hover:brightness-110 transition-all duration-700"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-orange-900 via-orange-900/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
