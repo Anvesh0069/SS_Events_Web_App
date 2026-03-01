@@ -276,19 +276,14 @@ function App() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Video 1 - Luxurious Wedding Aisle */}
-            <div className="relative overflow-hidden rounded-2xl shadow-xl group bg-gradient-to-br from-purple-900 to-purple-700 transform hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2" data-testid="gallery-video-1" style={{perspective: '1000px'}}>
+            {/* Image 1 - Luxurious Wedding Aisle */}
+            <div className="relative overflow-hidden rounded-2xl shadow-xl group bg-gradient-to-br from-purple-900 to-purple-700 transform hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2" data-testid="gallery-image-1" style={{perspective: '1000px'}}>
               <div className="relative overflow-hidden" style={{transformStyle: 'preserve-3d'}}>
-                <video 
-                  className="w-full h-80 object-cover cursor-pointer group-hover:brightness-110 transition-all duration-500"
-                  controls
-                  preload="auto"
-                  playsInline
-                  webkit-playsinline="true"
-                >
-                  <source src="https://customer-assets.emergentagent.com/job_capability-finder-28/artifacts/ofuauy8i_WhatsApp%20Video%202026-02-24%20at%207.21.24%20PM.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                <img 
+                  src="https://images.pexels.com/photos/19376436/pexels-photo-19376436.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                  alt="Luxurious Wedding Aisle Setup"
+                  className="w-full h-80 object-cover cursor-pointer group-hover:scale-110 group-hover:brightness-110 transition-all duration-700"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-900 via-purple-900/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
