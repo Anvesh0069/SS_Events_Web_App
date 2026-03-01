@@ -552,12 +552,26 @@ function App() {
             <div data-testid="contact-info">
               <h3 className="text-3xl font-bold mb-8">Get In Touch</h3>
               
-              {/* 🔄 CHANGE PROPRIETOR NAME HERE */}
+              {/* 🔄 CHANGE PROPRIETOR NAME AND PHOTO HERE */}
               <div className="mb-8 p-6 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20">
-                <h4 className="font-semibold text-lg text-amber-300 mb-2">Proprietor</h4>
-                <p className="text-2xl font-bold text-white">Ram Lal</p>
-                <p className="text-gray-200 text-lg">(Kalu Bhaya)</p>
-                <p className="text-gray-300 text-sm mt-2">20 Years of Event Excellence</p>
+                <h4 className="font-semibold text-lg text-amber-300 mb-4">Proprietor</h4>
+                <div className="flex items-center space-x-4">
+                  <div className="relative">
+                    <img 
+                      src="https://customer-assets.emergentagent.com/job_capability-finder-28/artifacts/gi223zu7_image.png"
+                      alt="Ram Lal - Proprietor"
+                      className="w-24 h-24 rounded-full object-cover border-4 border-amber-400 shadow-xl"
+                    />
+                    <div className="absolute -bottom-1 -right-1 bg-amber-500 rounded-full p-1">
+                      <Star className="h-4 w-4 text-white fill-white" />
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-2xl font-bold text-white">Ram Lal</p>
+                    <p className="text-gray-200 text-lg">(Kalu Bhaya)</p>
+                    <p className="text-amber-300 text-sm mt-1 font-medium">20 Years of Event Excellence</p>
+                  </div>
+                </div>
               </div>
               
               <div className="space-y-6">
@@ -579,7 +593,7 @@ function App() {
                   <div>
                     <h4 className="font-semibold text-lg mb-1">Phone</h4>
                     <p className="text-gray-200">+91 9849010190</p>
-                    <p className="text-gray-200">+91 9849010190</p>
+                    <p className="text-gray-200">+91 7075766273</p>
                   </div>
                 </div>
 
@@ -590,8 +604,8 @@ function App() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg mb-1">Email</h4>
-                    <p className="text-gray-200">anveshreddy00741@gmail.com</p>
-                    <p className="text-gray-200">anveshreddy00741@gmail.com</p>
+                    <p className="text-gray-200">ramlalkalu525@gmail.com</p>
+                    <p className="text-gray-200">aareanvesh@gmail.com</p>
                   </div>
                 </div>
               </div>
