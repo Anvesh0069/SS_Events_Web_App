@@ -324,14 +324,18 @@ function App() {
               </div>
             </div>
 
-            {/* Image 3 - Light Projection Stage */}
+            {/* Image 3 - Your Work: Light Projection Stage */}
             <div className="relative overflow-hidden rounded-2xl shadow-xl group bg-gradient-to-br from-cyan-900 to-blue-700 transform hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2" data-testid="gallery-image-3" style={{perspective: '1000px'}}>
               <div className="relative overflow-hidden" style={{transformStyle: 'preserve-3d'}}>
-                <img 
-                  src="https://images.unsplash.com/photo-1762968269894-1d7e1ce8894e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjBldmVudCUyMHN0YWdlfGVufDB8fHx8MTc3MTc3NzgzOHww&ixlib=rb-4.1.0&q=85"
-                  alt="3D Light Projection Stage"
-                  className="w-full h-80 object-cover cursor-pointer group-hover:scale-110 group-hover:brightness-110 transition-all duration-700"
-                />
+                <video 
+                  className="w-full h-80 object-cover cursor-pointer group-hover:brightness-110 transition-all duration-700"
+                  poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect fill='%23164e63' width='800' height='600'/%3E%3C/svg%3E"
+                  preload="metadata"
+                  muted
+                  playsInline
+                >
+                  <source src="https://customer-assets.emergentagent.com/job_capability-finder-28/artifacts/h3wxegek_WhatsApp%20Video%202026-02-24%20at%207.23.01%20PM%20%281%29.mp4#t=0.1" type="video/mp4" />
+                </video>
                 <div className="absolute inset-0 bg-gradient-to-t from-cyan-900 via-cyan-900/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
