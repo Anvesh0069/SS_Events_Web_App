@@ -265,175 +265,225 @@ function App() {
       </section>
 
       {/* Gallery Section */}
-      <section id="gallery" className="py-20 bg-gradient-to-br from-slate-50 to-gray-100" data-testid="gallery-section">
+      <section id="gallery" className="py-20 bg-gradient-to-br from-slate-50 via-white to-gray-100" data-testid="gallery-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" data-testid="gallery-title">Our Work</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 animate-fade-in" data-testid="gallery-title">
+              Our <span className="bg-gradient-to-r from-amber-600 to-purple-600 bg-clip-text text-transparent">Masterpieces</span>
+            </h2>
             <p className="text-xl text-gray-600" data-testid="gallery-subtitle">Real events we've transformed into magical experiences</p>
+            <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-purple-600 mx-auto mt-6 rounded-full"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Video 1 - Luxurious Wedding Aisle */}
-            <div className="relative overflow-hidden rounded-xl shadow-2xl group bg-black" data-testid="gallery-video-1">
-              <video 
-                className="w-full h-80 object-cover cursor-pointer"
-                controls
-                preload="auto"
-                playsInline
-                webkit-playsinline="true"
-                controlsList="nodownload"
-              >
-                <source src="https://customer-assets.emergentagent.com/job_capability-finder-28/artifacts/ofuauy8i_WhatsApp%20Video%202026-02-24%20at%207.21.24%20PM.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-purple-900/90 to-transparent p-4 pointer-events-none">
-                <p className="text-white font-bold text-lg">Luxurious Wedding Aisle</p>
-                <p className="text-gray-200 text-sm">Purple lighting, chandeliers & floral elegance</p>
+            <div className="relative overflow-hidden rounded-2xl shadow-xl group bg-gradient-to-br from-purple-900 to-purple-700 transform hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2" data-testid="gallery-video-1" style={{perspective: '1000px'}}>
+              <div className="relative overflow-hidden" style={{transformStyle: 'preserve-3d'}}>
+                <video 
+                  className="w-full h-80 object-cover cursor-pointer group-hover:brightness-110 transition-all duration-500"
+                  controls
+                  preload="auto"
+                  playsInline
+                  webkit-playsinline="true"
+                >
+                  <source src="https://customer-assets.emergentagent.com/job_capability-finder-28/artifacts/ofuauy8i_WhatsApp%20Video%202026-02-24%20at%207.21.24%20PM.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-900 via-purple-900/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
               </div>
-              <div className="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded pointer-events-none">
-                OUR WORK
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse"></div>
+                  <span className="text-amber-400 text-xs font-semibold uppercase tracking-wider">Wedding Setup</span>
+                </div>
+                <p className="text-white font-bold text-xl mb-1">Luxurious Wedding Aisle</p>
+                <p className="text-gray-300 text-sm">Purple lighting, chandeliers & floral elegance</p>
               </div>
             </div>
 
             {/* Video 2 - Modern Stage Setup */}
-            <div className="relative overflow-hidden rounded-xl shadow-2xl group bg-black" data-testid="gallery-video-2">
-              <video 
-                className="w-full h-80 object-cover cursor-pointer"
-                controls
-                preload="auto"
-                playsInline
-                webkit-playsinline="true"
-                controlsList="nodownload"
-              >
-                <source src="https://customer-assets.emergentagent.com/job_capability-finder-28/artifacts/8efb5ec8_WhatsApp%20Video%202026-02-24%20at%207.21.25%20PM%20%281%29.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-purple-900/90 to-transparent p-4 pointer-events-none">
-                <p className="text-white font-bold text-lg">Geometric LED Stage</p>
-                <p className="text-gray-200 text-sm">Modern meets classic opulence</p>
+            <div className="relative overflow-hidden rounded-2xl shadow-xl group bg-gradient-to-br from-blue-900 to-purple-700 transform hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2" data-testid="gallery-video-2" style={{perspective: '1000px'}}>
+              <div className="relative overflow-hidden" style={{transformStyle: 'preserve-3d'}}>
+                <video 
+                  className="w-full h-80 object-cover cursor-pointer group-hover:brightness-110 transition-all duration-500"
+                  controls
+                  preload="auto"
+                  playsInline
+                  webkit-playsinline="true"
+                >
+                  <source src="https://customer-assets.emergentagent.com/job_capability-finder-28/artifacts/8efb5ec8_WhatsApp%20Video%202026-02-24%20at%207.21.25%20PM%20%281%29.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900 via-blue-900/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
               </div>
-              <div className="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded pointer-events-none">
-                OUR WORK
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+                  <span className="text-blue-400 text-xs font-semibold uppercase tracking-wider">Modern Design</span>
+                </div>
+                <p className="text-white font-bold text-xl mb-1">Geometric LED Stage</p>
+                <p className="text-gray-300 text-sm">Modern meets classic opulence</p>
               </div>
             </div>
 
             {/* Video 3 - Triangular Light Projection */}
-            <div className="relative overflow-hidden rounded-xl shadow-2xl group bg-black" data-testid="gallery-video-3">
-              <video 
-                className="w-full h-80 object-cover cursor-pointer"
-                controls
-                preload="auto"
-                playsInline
-                webkit-playsinline="true"
-                controlsList="nodownload"
-              >
-                <source src="https://customer-assets.emergentagent.com/job_capability-finder-28/artifacts/h3wxegek_WhatsApp%20Video%202026-02-24%20at%207.23.01%20PM%20%281%29.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-purple-900/90 to-transparent p-4 pointer-events-none">
-                <p className="text-white font-bold text-lg">3D Light Projection</p>
-                <p className="text-gray-200 text-sm">Innovative triangular hologram effect</p>
+            <div className="relative overflow-hidden rounded-2xl shadow-xl group bg-gradient-to-br from-cyan-900 to-blue-700 transform hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2" data-testid="gallery-video-3" style={{perspective: '1000px'}}>
+              <div className="relative overflow-hidden" style={{transformStyle: 'preserve-3d'}}>
+                <video 
+                  className="w-full h-80 object-cover cursor-pointer group-hover:brightness-110 transition-all duration-500"
+                  controls
+                  preload="auto"
+                  playsInline
+                  webkit-playsinline="true"
+                >
+                  <source src="https://customer-assets.emergentagent.com/job_capability-finder-28/artifacts/h3wxegek_WhatsApp%20Video%202026-02-24%20at%207.23.01%20PM%20%281%29.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <div className="absolute inset-0 bg-gradient-to-t from-cyan-900 via-cyan-900/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
               </div>
-              <div className="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded pointer-events-none">
-                OUR WORK
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                  <span className="text-cyan-400 text-xs font-semibold uppercase tracking-wider">High-Tech</span>
+                </div>
+                <p className="text-white font-bold text-xl mb-1">3D Light Projection</p>
+                <p className="text-gray-300 text-sm">Innovative triangular hologram effect</p>
               </div>
             </div>
 
             {/* Video 4 - Religious Ceremony LED Setup */}
-            <div className="relative overflow-hidden rounded-xl shadow-2xl group bg-black" data-testid="gallery-video-4">
-              <video 
-                className="w-full h-80 object-cover cursor-pointer"
-                controls
-                preload="auto"
-                playsInline
-                webkit-playsinline="true"
-                controlsList="nodownload"
-              >
-                <source src="https://customer-assets.emergentagent.com/job_capability-finder-28/artifacts/v56rddm5_WhatsApp%20Video%202026-02-24%20at%207.30.56%20PM.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-purple-900/90 to-transparent p-4 pointer-events-none">
-                <p className="text-white font-bold text-lg">Grand LED Display Setup</p>
-                <p className="text-gray-200 text-sm">Religious ceremony with digital screens</p>
+            <div className="relative overflow-hidden rounded-2xl shadow-xl group bg-gradient-to-br from-orange-900 to-red-700 transform hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2" data-testid="gallery-video-4" style={{perspective: '1000px'}}>
+              <div className="relative overflow-hidden" style={{transformStyle: 'preserve-3d'}}>
+                <video 
+                  className="w-full h-80 object-cover cursor-pointer group-hover:brightness-110 transition-all duration-500"
+                  controls
+                  preload="auto"
+                  playsInline
+                  webkit-playsinline="true"
+                >
+                  <source src="https://customer-assets.emergentagent.com/job_capability-finder-28/artifacts/v56rddm5_WhatsApp%20Video%202026-02-24%20at%207.30.56%20PM.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <div className="absolute inset-0 bg-gradient-to-t from-orange-900 via-orange-900/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
               </div>
-              <div className="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded pointer-events-none">
-                OUR WORK
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="w-2 h-2 bg-orange-400 rounded-full animate-pulse"></div>
+                  <span className="text-orange-400 text-xs font-semibold uppercase tracking-wider">LED Displays</span>
+                </div>
+                <p className="text-white font-bold text-xl mb-1">Grand LED Display Setup</p>
+                <p className="text-gray-300 text-sm">Religious ceremony with digital screens</p>
               </div>
             </div>
 
             {/* Video 5 - Event with Stage Performance */}
-            <div className="relative overflow-hidden rounded-xl shadow-2xl group bg-black" data-testid="gallery-video-5">
-              <video 
-                className="w-full h-80 object-cover cursor-pointer"
-                controls
-                preload="auto"
-                playsInline
-                webkit-playsinline="true"
-                controlsList="nodownload"
-              >
-                <source src="https://customer-assets.emergentagent.com/job_capability-finder-28/artifacts/ofqmpt5h_WhatsApp%20Video%202026-02-24%20at%207.30.19%20PM.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-purple-900/90 to-transparent p-4 pointer-events-none">
-                <p className="text-white font-bold text-lg">Dynamic Stage Lighting</p>
-                <p className="text-gray-200 text-sm">Neon effects & professional sound</p>
+            <div className="relative overflow-hidden rounded-2xl shadow-xl group bg-gradient-to-br from-pink-900 to-purple-700 transform hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2" data-testid="gallery-video-5" style={{perspective: '1000px'}}>
+              <div className="relative overflow-hidden" style={{transformStyle: 'preserve-3d'}}>
+                <video 
+                  className="w-full h-80 object-cover cursor-pointer group-hover:brightness-110 transition-all duration-500"
+                  controls
+                  preload="auto"
+                  playsInline
+                  webkit-playsinline="true"
+                >
+                  <source src="https://customer-assets.emergentagent.com/job_capability-finder-28/artifacts/ofqmpt5h_WhatsApp%20Video%202026-02-24%20at%207.30.19%20PM.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <div className="absolute inset-0 bg-gradient-to-t from-pink-900 via-pink-900/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
               </div>
-              <div className="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded pointer-events-none">
-                OUR WORK
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="w-2 h-2 bg-pink-400 rounded-full animate-pulse"></div>
+                  <span className="text-pink-400 text-xs font-semibold uppercase tracking-wider">Dynamic Lighting</span>
+                </div>
+                <p className="text-white font-bold text-xl mb-1">Dynamic Stage Lighting</p>
+                <p className="text-gray-300 text-sm">Neon effects & professional sound</p>
               </div>
             </div>
 
             {/* Image 1 - Stock */}
-            <div className="relative overflow-hidden rounded-xl shadow-lg group" data-testid="gallery-image-1">
-              <img 
-                src="https://images.pexels.com/photos/19376436/pexels-photo-19376436.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                alt="Wedding Celebration"
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                <p className="text-white font-semibold">Wedding Celebrations</p>
+            <div className="relative overflow-hidden rounded-2xl shadow-xl group transform hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2" data-testid="gallery-image-1" style={{perspective: '1000px'}}>
+              <div className="relative overflow-hidden" style={{transformStyle: 'preserve-3d'}}>
+                <img 
+                  src="https://images.pexels.com/photos/19376436/pexels-photo-19376436.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                  alt="Wedding Celebration"
+                  className="w-full h-80 object-cover group-hover:scale-110 group-hover:brightness-110 transition-all duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-amber-900 via-amber-900/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse"></div>
+                  <span className="text-amber-400 text-xs font-semibold uppercase tracking-wider">Celebrations</span>
+                </div>
+                <p className="text-white font-bold text-xl">Wedding Celebrations</p>
               </div>
             </div>
 
             {/* Image 2 - Stock */}
-            <div className="relative overflow-hidden rounded-xl shadow-lg group" data-testid="gallery-image-2">
-              <img 
-                src="https://images.pexels.com/photos/2060240/pexels-photo-2060240.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                alt="Traditional Wedding Setup"
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                <p className="text-white font-semibold">Traditional Ceremonies</p>
+            <div className="relative overflow-hidden rounded-2xl shadow-xl group transform hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2" data-testid="gallery-image-2" style={{perspective: '1000px'}}>
+              <div className="relative overflow-hidden" style={{transformStyle: 'preserve-3d'}}>
+                <img 
+                  src="https://images.pexels.com/photos/2060240/pexels-photo-2060240.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                  alt="Traditional Wedding Setup"
+                  className="w-full h-80 object-cover group-hover:scale-110 group-hover:brightness-110 transition-all duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-900 via-purple-900/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse"></div>
+                  <span className="text-purple-400 text-xs font-semibold uppercase tracking-wider">Traditional</span>
+                </div>
+                <p className="text-white font-bold text-xl">Traditional Ceremonies</p>
               </div>
             </div>
 
             {/* Image 3 - Stock */}
-            <div className="relative overflow-hidden rounded-xl shadow-lg group" data-testid="gallery-image-3">
-              <img 
-                src="https://images.pexels.com/photos/36154338/pexels-photo-36154338.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                alt="Elegant Ceremony Setup"
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                <p className="text-white font-semibold">Elegant Setups</p>
+            <div className="relative overflow-hidden rounded-2xl shadow-xl group transform hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2" data-testid="gallery-image-3" style={{perspective: '1000px'}}>
+              <div className="relative overflow-hidden" style={{transformStyle: 'preserve-3d'}}>
+                <img 
+                  src="https://images.pexels.com/photos/36154338/pexels-photo-36154338.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                  alt="Elegant Ceremony Setup"
+                  className="w-full h-80 object-cover group-hover:scale-110 group-hover:brightness-110 transition-all duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-rose-900 via-rose-900/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="w-2 h-2 bg-rose-400 rounded-full animate-pulse"></div>
+                  <span className="text-rose-400 text-xs font-semibold uppercase tracking-wider">Elegant</span>
+                </div>
+                <p className="text-white font-bold text-xl">Elegant Setups</p>
               </div>
             </div>
 
             {/* Image 4 - Stock */}
-            <div className="relative overflow-hidden rounded-xl shadow-lg group" data-testid="gallery-image-4">
-              <img 
-                src="https://images.pexels.com/photos/29708240/pexels-photo-29708240.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                alt="Corporate Event Stage"
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                <p className="text-white font-semibold">Corporate Events</p>
+            <div className="relative overflow-hidden rounded-2xl shadow-xl group transform hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2" data-testid="gallery-image-4" style={{perspective: '1000px'}}>
+              <div className="relative overflow-hidden" style={{transformStyle: 'preserve-3d'}}>
+                <img 
+                  src="https://images.pexels.com/photos/29708240/pexels-photo-29708240.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                  alt="Corporate Event Stage"
+                  className="w-full h-80 object-cover group-hover:scale-110 group-hover:brightness-110 transition-all duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900 via-blue-900/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+                  <span className="text-blue-400 text-xs font-semibold uppercase tracking-wider">Corporate</span>
+                </div>
+                <p className="text-white font-bold text-xl">Corporate Events</p>
               </div>
             </div>
           </div>
 
-          <div className="text-center mt-12">
-            <p className="text-gray-600 italic">These are real projects executed by SS Events team</p>
+          <div className="text-center mt-16">
+            <div className="inline-block bg-white/50 backdrop-blur-sm px-8 py-4 rounded-full shadow-lg border border-gray-200">
+              <p className="text-gray-700 font-medium">
+                <span className="text-amber-600 font-bold">20 Years</span> of creating unforgettable moments
+              </p>
+            </div>
           </div>
         </div>
       </section>
